@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="panel" id="panel">
+		<h2>Marker erstellen</h2>
+
+		<div class="field">
+			<label>Bezeichnung (optional)</label>
+			<input id="f-label" type="text" placeholder="z.B. Teleport, Händler ...">
+		</div>
+
+		<div class="field">
+			<label>Typ</label>
+			<select id="f-type">
+				<option value="marker">DrawMarker</option>
+				<option value="npc">NPC</option>
+			</select>
+		</div>
+
+		<hr class="divider">
+
+		<!-- DrawMarker -->
+		<div id="sec-marker">
+			<div class="field">
+				<label>Marker-Typ</label>
+				<select id="f-marker-type"></select>
+			</div>
+			<div class="field">
+				<label>Farbe</label>
+				<select id="f-color"></select>
+			</div>
+		</div>
+
+		<!-- NPC -->
+		<div id="sec-npc" class="hidden">
+			<div class="field">
+				<label>Model (leer = Standard)</label>
+				<input id="f-model" type="text" placeholder="a_m_m_business_01">
+			</div>
+			<div class="field">
+				<label>Aktion</label>
+				<select id="f-action"></select>
+			</div>
+			<div id="sec-item" class="hidden">
+				<div class="row">
+					<div class="field">
+						<label>Item</label>
+						<input id="f-item" type="text" placeholder="bread">
+					</div>
+					<div class="field">
+						<label>Anzahl</label>
+						<input id="f-count" type="number" value="1" min="1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="buttons">
+			<button id="btn-cancel">Abbrechen</button>
+			<button id="btn-submit">Erstellen</button>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

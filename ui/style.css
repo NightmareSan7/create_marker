@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: #fff;
+}
+
+.panel {
+	background: rgba(12, 12, 12, 0.96);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	padding: 24px;
+	width: 340px;
+	display: none;
+}
+
+.panel.open {
+	display: block;
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.85);
+	padding-bottom: 14px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.field {
+	margin-bottom: 12px;
+}
+
+label {
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 5px;
+}
+
+input,
+select {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+	color: #fff;
+	padding: 8px 10px;
+	font-size: 13px;
+	outline: none;
+	transition: border-color 0.15s;
+}
+
+input:focus,
+select:focus {
+	border-color: rgba(255, 255, 255, 0.28);
+}
+
+input::placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+
+select option {
+	background: #141414;
+}
+
+.row {
+	display: flex;
+	gap: 10px;
+}
+
+.row .field {
+	flex: 1;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.divider {
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+	margin: 14px 0;
+}
+
+.buttons {
+	display: flex;
+	gap: 8px;
+	margin-top: 18px;
+}
+
+button {
+	flex: 1;
+	padding: 9px;
+	border: none;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+#btn-submit {
+	background: #2e6b2e;
+	color: #fff;
+}
+
+#btn-submit:hover {
+	background: #357535;
+}
+
+#btn-cancel {
+	background: rgba(255, 255, 255, 0.07);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+#btn-cancel:hover {
+	background: rgba(255, 255, 255, 0.12);
+}
